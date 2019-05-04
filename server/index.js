@@ -13,8 +13,6 @@ const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 
 passport.use(new GoogleStrategy());
-// clientID: 294385035552-bfe8bjf1u48pp096tso157rrfmmc88ij.apps.googleusercontent.com
-// clientSecret: nO5S2x-FtbRJD09Tuf8DxpPc
 
 
 
