@@ -49,7 +49,7 @@ app.get(
   }
 ))
 
-// this route handler looks similar to the above one. Notice that now google sents back the code to notify the passport that it is not the first time to authenticate. So instead of kicking to the google auth page again, it would take the code and do the followup request to google. 
+// this route handler looks similar to the above one. Notice that now google sents back the code behind the callback url to notify the passport that the user has already been authenticated. The passport would then take the code and do followup requests to google
 app.get(
   '/auth/google/callback',
   passport.authenticate('google')
