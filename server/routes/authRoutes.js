@@ -1,3 +1,4 @@
+const passport = require('passport');
 // when the user try to get the url, we try to let the passport authenticate
 // the google.
 app.get(
